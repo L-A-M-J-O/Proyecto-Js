@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Proyecto JS Alan Naranjo</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <main class=" main py-6 px-4 sm:p-6 md:py-10 md:px-8 ">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="/img/video.mp4" type="video/mp4">
+    </video>
+    <div class="bg-transparent card m-10 flex-col justify-center items-center"> 
+      <h1 class="text-white italic font-bold text-center text-2xl" id="h1N"></h1>
+    </div>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
+      <div class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
+        <h1 class="mt-4 text-6xl font-bold  sm:text-white-900 md:text-5xl dark:sm:text-white">Bienvenidos, Este es mi proyecto que pronto sera un video juego</h1>
+        <h1 class="mt-4 text-2xl font-bold sm:text-white-900 md:text-2xl dark:sm:text-white">Welcome, This is my project that will sowhite  a videogame</h1>
+        <p class="text-sm leading-10 font-medium sm:text-white-500 dark:sm:text-white">Alan Mateo Naranjo Alvarado</p>
+      </div>
+      <div class="grid gap-6 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
+        <button id="boton1" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Thor</button>
+        <button id="boton2" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Moon Nigth</button>  
+        <button id="boton3" class=" bg-transparent text-white hover:text-2xl italic font-bold border-4 ">Capitan America</button>
+        <button id="boton4" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Loki</button>
+        <button id="boton5" class=" bg-transparent text-white hover:text-2xl italic font-bold border-4 ">Thanos</button>
+        <button id="boton6" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Hulk</button>
+        <button id="boton7" class=" bg-transparent text-white hover:text-lg italic font-bold border-4 ">Agregar Nuevo SuperHeroe</button>
+        <button id="boton8" class=" bg-transparent text-white hover:text-3xl italic font-bold border-4 ">Boton 8</button>
+      </div>
+      <div class="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
+        <button  class="cuadros bg-transparent border-4 hover:text-white border-r-stone-200 text-white transition duration-500"><a href="https://github.com/L-A-M-J-O" target="_blank">Mi GitHub</a></button>
+        <button  class="cuadros bg-transparent border-4 hover:text-white border-r-stone-200 text-white transition duration-500 ml-8"><a href="https://ladign-3c53c.web.app/#" target="_blank">Lading</a></button>
+        <button  class="cuadros bg-transparent border-4 hover:text-white border-r-stone-200 text-white transition duration-500 ml-7"><a href="https://www.linkedin.com/in/alann3009200330092003/" target="_blank">Linkedin</a></button>
+      </div>
+    </div>
+  </main>
+    <div class="caja_poke container mt-5">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide container">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem1"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem2"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2 ">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem3"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2 ">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem4"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div  class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem5"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem6"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem7"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col-2 ">
+              <div class="card-poke border-stone-200 text-black hover:text-3xl italic font-bold" id="elem8"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="row row-cols-1">
+        <div class="col-2 border">
+          <div id="elem"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem1"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem2"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem3"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem4"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem5"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem6"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem7"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem8"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem9"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem10"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem11"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem12"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem13"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem14"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem15"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem16"></div>
+        </div>
+        <div class="col-2 border">
+          <div id="elem17"></div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src='./Js/Proyecto.js'></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+</html>
